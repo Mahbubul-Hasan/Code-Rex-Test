@@ -10,8 +10,12 @@
         "eslint": "yarn add -D eslint prettier && npx install-peerdeps --dev eslint-config-airbnb-base && yarn add -D eslint-config-prettier eslint-plugin-prettier"
     },
     "dependencies": {
+        "@chakra-ui/react": "^2.5.5",
+        "@emotion/react": "^11.10.6",
+        "@emotion/styled": "^11.10.6",
         "eslint": "8.2.0",
         "eslint-config-next": "13.2.4",
+        "framer-motion": "^10.10.0",
         "next": "13.2.4",
         "react": "18.2.0",
         "react-dom": "18.2.0"
