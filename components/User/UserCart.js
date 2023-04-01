@@ -22,7 +22,7 @@ export default function UserCart({ user }) {
             shadow="lg"
             position="relative"
         >
-            <Link as={NextLink} href={`/users/${user.id}`}>
+            <Link as={NextLink} href={`/users/${user?.id}`}>
                 <Image
                     src={user?.image}
                     alt={user?.firstName}
@@ -32,7 +32,7 @@ export default function UserCart({ user }) {
 
             <Box p="3">
                 <VStack spacing="2" align="stretch">
-                    <Link as={NextLink} href={`/users/${user.id}`}>
+                    <Link as={NextLink} href={`/users/${user?.id}`}>
                         <Box
                             fontSize="2xl"
                             fontWeight="semibold"
@@ -40,7 +40,7 @@ export default function UserCart({ user }) {
                             lineHeight="tight"
                             isTruncated
                         >
-                            {user.firstName + " " + user.lastName}
+                            {user?.firstName + " " + user?.lastName}
                         </Box>
                     </Link>
 
@@ -48,28 +48,22 @@ export default function UserCart({ user }) {
                         <Text as="span" fontWeight="bold" color="black" mr="2">
                             Email:
                         </Text>
-                        <Text as="span">{user.email}</Text>
+                        <Text as="span">{user?.email}</Text>
                     </Text>
                     <Text fontSize="sm" color="gray.500">
                         <Text as="span" fontWeight="bold" color="black" mr="2">
                             Phone:
                         </Text>
-                        <Text as="span">{user.phone}</Text>
+                        <Text as="span">{user?.phone}</Text>
                     </Text>
                     <Text fontSize="sm" color="gray.500">
                         <Text as="span" fontWeight="bold" color="black" mr="2">
                             Blood:
                         </Text>
-                        <Text as="span">{user.bloodGroup}</Text>
+                        <Text as="span">{user?.bloodGroup}</Text>
                     </Text>
                 </VStack>
             </Box>
         </Box>
     );
 }
-
-const data = {
-    imageURL:
-        "https://images.unsplash.com/photo-1572635196237-14b3f281503f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=4600&q=80",
-    name: "ArtCrypto",
-};

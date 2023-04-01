@@ -16,7 +16,7 @@ import SpinnerComponent from "../Spinner/SpinnerComponent";
 export default function UserListSection() {
     const [data, setData] = useState({});
 
-    const { loading, error, result } = useUsers("https://dummyjson.com/users");
+    const { loading, error, result } = useUsers();
 
     useEffect(() => {
         if (result && result.users) {
