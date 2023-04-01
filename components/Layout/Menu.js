@@ -13,6 +13,7 @@ import {
     useColorModeValue,
     useDisclosure,
 } from "@chakra-ui/react";
+import NextLink from "next/link";
 
 export default function Menu() {
     const { isOpen, onToggle } = useDisclosure();
@@ -50,7 +51,11 @@ export default function Menu() {
                         justify={{ base: "center", md: "start" }}
                         align="center"
                     >
-                        <Link href="/" _hover={{ textDecoration: "none" }}>
+                        <Link
+                            as={NextLink}
+                            href="/"
+                            _hover={{ textDecoration: "none" }}
+                        >
                             <Text
                                 textAlign={useBreakpointValue({
                                     base: "center",
