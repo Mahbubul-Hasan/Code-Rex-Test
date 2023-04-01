@@ -10,6 +10,7 @@
         "eslint": "yarn add -D eslint prettier && npx install-peerdeps --dev eslint-config-airbnb-base && yarn add -D eslint-config-prettier eslint-plugin-prettier"
     },
     "dependencies": {
+        "@chakra-ui/icons": "^2.0.18",
         "@chakra-ui/react": "^2.5.5",
         "@emotion/react": "^11.10.6",
         "@emotion/styled": "^11.10.6",
